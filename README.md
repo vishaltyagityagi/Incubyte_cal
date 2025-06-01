@@ -46,11 +46,12 @@ The `add` method of the String Calculator supports the following functionalities
     calculator = StringCalculator.new
     calculator.add("")         # => 0
     calculator.add("1")        # => 1
-    calculator.add("1,2")      # => 3
+    calculator.add("1,5")      # => 3
+    calculator.add("1,2,3")    # => 6
     calculator.add("1\n2,3")   # => 6
     calculator.add("//;\n1;2") # => 3
-    calculator.add("1,-2,-5")  # => raises "negative numbers not allowed: -2, -5"
-
+    calculator.add("//|\n1|2|3") # => "Negative numbers not allowed: -2"
+    calculator.add("//;\n1;-2;3;-4") # => "Negative numbers not allowed: -2,-4"
 ## Project Structure
     .
     ├── lib
