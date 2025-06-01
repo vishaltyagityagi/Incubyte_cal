@@ -38,6 +38,10 @@ RSpec.describe StringCalculator, type: :lib do
         it "raises an error with a list of negative numbers" do
           expect { calculator.add("1,-2,3") }.to raise_error("Negative numbers not allowed: -2")
         end
+
+        it "raises an error when multiple negative numbers are present" do
+          expect { calculator.add("//;\n1;-2;3;-4") }.to raise_error("Negative numbers not allowed: -2,-4")
+        end
       end
 
     end
