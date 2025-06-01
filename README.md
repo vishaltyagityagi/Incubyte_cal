@@ -4,7 +4,7 @@ This repository contains a Ruby implementation of the String Calculator TDD (Tes
 
 ## Project Description
 
-The String Calculator is a simple utility that takes a string of numbers as input and returns their sum. The development process follows the TDD cycle: Red (write a failing test), Green (write just enough code to make the test pass), Refactor (improve the code without changing its behavior).
+The String Calculator is a simple utility that takes a string of numbers as input and returns their sum. The development process follows the TDD cycle, Refactor (improve the code without changing its behavior).
 
 ## Features
 
@@ -36,11 +36,11 @@ The `add` method of the String Calculator supports the following functionalities
 
 * **Negative Numbers Exception:** Throws an exception if any negative numbers are provided in the input.
 
-    * The exception message will be: `"negative numbers not allowed <negative_number>"`.
+    * The exception message will be: `"Negative numbers not allowed <negative_number>"`.
 
     * If multiple negative numbers are present, all of them will be listed in the exception message, separated by commas.
 
-    * Example: `add("1,-2,3,-4")` throws `"negative numbers not allowed -2,-4"`
+    * Example: `add("//;\n1;-2;3;-4")` throws `"Negative numbers not allowed -2,-4"`
   
 ## Example Usage 
     calculator = StringCalculator.new
@@ -74,11 +74,11 @@ You need to have Ruby installed on your system.
 * [Download and Install Ruby](https://www.ruby-lang.org/en/documentation/installation/)
 
 ### Cloning the Repository
-    git clone https://github.com/your-username/string-calculator-kata.git
-    cd string-calculator-kata
+    git clone https://github.com/vishaltyagityagi/Incubyte_cal.git
+    cd Incubyte_cal
 ### Run tests using RSpec:
 
-    bundle install
+    bundle i
     rspec
 
 
