@@ -1,5 +1,9 @@
 class StringCalculator
-  def add(numbers)
-    return 0 if numbers.empty?
+  attr_reader :numbers
+
+  def add(string)
+    return 0 if string.empty?
   end
+  
+
 end
